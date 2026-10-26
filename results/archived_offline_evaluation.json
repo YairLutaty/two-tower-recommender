@@ -1,0 +1,33 @@
+{
+  "status": "verified_from_retained_local_artifacts",
+  "verified_on": "2026-10-25",
+  "source_branch": "recommender_3",
+  "source_commit": "04b29aac57d300a9e253247dad90f42c68e5e052",
+  "protocol": {
+    "dataset": "MovieLens 1M",
+    "positive_rating_threshold": 3.0,
+    "minimum_positive_interactions_per_user": 15,
+    "split": "five most recent positive interactions per eligible user held out",
+    "training_interactions": 805902,
+    "test_interactions": 29940,
+    "users_evaluated": 5988,
+    "mapped_movies": 3628,
+    "k": 10
+  },
+  "results": {
+    "two_tower": {
+      "hit_rate_at_10": 0.3275,
+      "ndcg_at_10": 0.0718
+    },
+    "popularity_baseline": {
+      "hit_rate_at_10": 0.1672,
+      "ndcg_at_10": 0.0341
+    }
+  },
+  "retained_input_hashes": {
+    "model_pt_sha256": "39c0a8e7689ecd57bf5fddf137d30dbed94c867906c3706fee2242bb84ebb82b",
+    "id_maps_pkl_sha256": "5ff4f2e72590467628dd6dada14fec90dd58e0780654ef5617869640130a4ae8",
+    "ratings_dat_sha256": "506d64ca44484487c11dc2d9a28de5c54948213e6b96285e298afe28d6ea4e0f"
+  },
+  "reproducibility_note": "The retained weights and MovieLens data were used only to verify this record and are not redistributed. The historical training run did not record a random seed, so a fresh training run is expected to vary and is not claimed to reproduce these exact values."
+}

@@ -1,0 +1,29 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local configuration
+.env
+
+# External data and generated artifacts
+data/ml-1m/
+artifacts/
+models/
+*.dat
+*.pkl
+*.pt
+
+# Airflow and local service state
+logs/
+airflow.db
+airflow-webserver.pid
